@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            
             jumpKeyPressed = true;
         }
 
@@ -38,7 +39,7 @@ public class Player : MonoBehaviour
 
         jumpKeyPressed = false;
         }
-        rigidbodyComponent.velocity = new Vector3(horizontalInput, rigidbodyComponent.velocity.y , 0);
+        rigidbodyComponent.velocity = new Vector3(horizontalInput, 0, rigidbodyComponent.velocity.z);
      
     }
 
